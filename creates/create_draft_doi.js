@@ -3,14 +3,13 @@ const perform = (z, bundle) => {
     url: 'https://api.test.datacite.org/dois',
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
+      'Content-Type': 'application/vnd.api+json',
+      Accept: 'application/vnd.api+json',
     },
     body: {
       data: {
         attributes: {
           prefix: bundle.inputData.prefix,
-          schemaVersion: 'http://datacite.org/schema/kernel-4',
           url: bundle.inputData.url,
           titles: [{ title: bundle.inputData.title }],
           publisher: bundle.inputData.publisher,
