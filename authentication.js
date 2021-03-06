@@ -1,12 +1,12 @@
 module.exports = {
-  type: 'basic', 
+  type: 'basic',
   test: {
-    url: 'https://api.datacite.org/providers', 
+    url: 'https://api.datacite.org/providers',
     method: 'GET',
-    params: { username: process.env.USERNAME, password: process.env.PASSWORD }, 
-    headers: {}, 
-    body: {}, 
-    removeMissingValuesFrom: {}, 
+    params: { username: process.env.USERNAME, password: process.env.PASSWORD },
+    headers: {},
+    body: {},
+    removeMissingValuesFrom: {},
   },
-  basicConfig: {}, 
+  basicConfig: {},
 };

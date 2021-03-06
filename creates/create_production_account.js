@@ -33,7 +33,7 @@ const perform = (z, bundle) => {
 
 module.exports = {
   operation: {
-    perform: perform,
+    perform,
     inputFields: [
       {
         key: 'symbol',
@@ -70,7 +70,7 @@ module.exports = {
       {
         key: 'passwordInput',
         label: 'Password',
-        type: 'string',
+        type: 'password',
         required: true,
         list: false,
         altersDynamicFields: false,
@@ -78,7 +78,7 @@ module.exports = {
       {
         key: 'confirmPasswordInput',
         label: 'Confirm Password',
-        type: 'string',
+        type: 'password',
         required: true,
         list: false,
         altersDynamicFields: false,

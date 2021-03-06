@@ -1,8 +1,10 @@
+/* eslint-disable no-undef */
 require('should');
 
 const zapier = require('zapier-platform-core');
 
 const App = require('../../index');
+
 const appTester = zapier.createAppTester(App);
 
 describe('Create - create_test_account', () => {
@@ -19,8 +21,8 @@ describe('Create - create_test_account', () => {
     };
 
     const result = await appTester(
-      App.creates['create_test_account'].operation.perform,
-      bundle
+      App.creates.create_test_account.operation.perform,
+      bundle,
     );
     result.should.not.be.an.Array();
   });
