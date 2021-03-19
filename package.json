@@ -1,6 +1,6 @@
 {
   "name": "data-cite-fabrica",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "DataCite Fabrica is a service to manage DOI creation",
   "main": "index.js",
   "author": "Kristian Garza <kgarza@datacite.org>",
